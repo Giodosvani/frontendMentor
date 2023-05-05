@@ -1,0 +1,145 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    text-align: center;
+    color: white;
+    font-family: 'Hanken Grotesk', sans-serif;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    max-width: 600px;
+    display: flex;
+    border-radius: 20px;
+    box-shadow: 5px 5px 19px #00000048;
+    background-color: white;
+}
+
+.card {
+    background-image: linear-gradient( #6743ff, #362cef );
+    width: 50%;
+    border-radius: 20px;
+}
+
+.card h1 {
+    margin: 20px;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.card h2 {
+    font-weight: 700;
+    margin: 20px;
+}
+
+.card p {
+    color: #ffffff;
+    font-size: 1rem;
+    margin: 20px;
+}
+
+.score {
+    width: fit-content;
+    margin: auto;
+    height: 80px;
+    width: 80px; 
+    background-image: linear-gradient( #4b22c9, #4734ee );
+    border-radius: 50%;
+    padding: 30px;
+}
+
+.score h1 {
+    font-weight: 700;
+    font-size: 3rem;
+    margin: 0;
+}
+
+.score p {
+    font-size: .8rem;
+    color: gray;
+}
+
+.summary {
+    width: 50%;
+    border-radius: 20px;
+    color: black;
+    text-align: start;
+}
+
+.summary h1 {
+    font-size: 1rem;
+    margin: 20px 0px 20px 15%;
+}
+
+.reaction {
+    background-color: #fff6f5;
+    color: #e6565f;
+}
+
+.memory {
+    background-color: #fffbf2;
+    color: #febb38;
+}
+
+.verbal {
+    background-color: #f2fbfa;
+    color: #1ea67e;
+}
+
+.visual {
+    background-color: #f3f3fd;
+    color: #0f1bbb;
+}
+
+.reaction, .memory, .verbal, .visual {
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    margin: 10px auto;
+    padding: 10px;
+    border-radius: 10px
+} 
+
+.reaction p, .memory p, .verbal p, .visual p {
+    color: gray;
+}
+
+.reaction h2, .memory h2, .verbal h2, .visual h2 {
+    font-size: 1rem;
+} 
+
+strong {
+    color: black;
+}
+
+.botao {
+    background-color: #303b59;
+    color: white;
+    margin: auto;
+    text-align: center;
+    border-radius: 20px;
+    padding: 10px;
+    max-width: 80%;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.botao:hover {
+    background-image: linear-gradient(#6743ff, #362cef);
+}
+
+footer {
+    position: absolute;
+    bottom: 0px;
+}
