@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <title>Frontend Mentor | Newsletter sign-up form with success message</title>
+
+  <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+
+  <div class="container">
+    <div class="card home">
+
+      <div class="formulario">
+        <h1>Stay updated!</h1>
+
+        <p>Join 60,000+ product managers receiving monthly updates on:</p>
+
+        <ul>
+          <li>Product discovery and building what matters</li>
+          <li>Measuring to ensure updates are a success</li>
+          <li>And much more!</li>
+        </ul>
+
+        <form action="#">
+        
+          <div class="validation">
+            <label for="inputemail">Email address:</label>
+            <label for="inputemail" class="invalid">valid email required</label>
+          </div>
+          <input type="email" name="emailInp" id="inputemail" placeholder="email@company.com">
+
+          <input type="submit" value="Subscribe to monthly newsletter" onclick="validar()" class="botao">
+
+        </form>
+      </div> <!-- formulario -->
+      
+
+      <div class="ilustracao"><img src="assets/images/illustration-sign-up-desktop.svg" alt="illustration"></div>
+    </div> <!-- signup -->
+
+   
+
+
+
+
+
+
+
+
+<!-- ------------------------------------------------------------------------------------------------------------------------>
+
+    <div class="card success">
+
+      <img src="assets/images/icon-list.svg" alt="checked" class="check">
+
+      <h1>Thanks for subscribing!</h1>
+
+      <p class="confirmation"></p>
+
+      <input type="submit" value="Dismiss message" class="botao" onclick="voltar()">
+
+    </div> <!-- success -->
+
+
+  </div> <!-- container -->
+  
+
+
+
+
+  <footer>
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://giodosvani.github.io/portfolio" target="_blank"> Giodosvani</a>.
+  </footer>
+
+  <script src="scripts/script.js"></script>
+</body>
+</html>
