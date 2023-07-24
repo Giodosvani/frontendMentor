@@ -1,0 +1,169 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Poppins', sans-serif;
+}
+
+html, body {
+    min-width: 100vw;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+:root {
+    /* Primarias */
+    --Purple: #854dff;
+    --LightRed: #ff5757;
+
+    /* Neutras */
+    --OffWhite: #f0f0f0;
+    --LightGrey: #dbdbdb;
+    --SmokeyGrey: #716f6f;
+    --OffBlack: #141414;
+}
+
+body {
+    background-color: var(--OffWhite);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.container {
+    min-height: 100vh;
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+
+    border-radius: 20px 20px 80px 20px;
+    padding: 20px;
+    max-width: 80%;
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 30px 0px;
+    border-bottom: 1px solid var(--SmokeyGrey);
+}
+
+.date {
+    width: 32%;
+} 
+
+.date label {
+    font-size: .8em;
+    color: var(--SmokeyGrey);
+    width: 100%;
+}
+
+input {
+    font-size: 20px;
+    padding: 10px;
+    width: 65%;
+    border-radius: 8px;
+    border: 1px solid var(--LightGrey);
+}
+
+button {
+    background-color: var(--Purple);
+    padding: 5px;
+    border-radius: 50%;
+
+    min-width: 50px;
+    min-height: 50px;
+
+    transform: translate(0%, 55%);
+    border: none;
+
+    transition: .08s;
+}
+
+button img {
+    max-height: 25px;
+}
+
+button:hover {
+    background-color: #141414;
+}
+
+.result {
+    margin: 30px 0px;
+    font-size: 3em;
+    line-height: 60px;
+    
+    font-weight: 800;
+    font-style: italic;
+}
+
+strong {
+    color: var(--Purple);
+}
+
+.advice {
+    font-size: .7em;
+    color: var(--LightRed);
+    display: none;
+}
+
+
+@media (min-width: 800px) {
+    main {
+        max-width: 100%;
+        min-width: 35vw;
+    }
+
+
+    form {
+        align-items: center;
+        justify-content: space-between;
+        border-bottom: 1px solid var(--LightGrey);
+        margin: 0px 0px;
+        padding: 20px 0px;
+    }
+
+    button {
+        margin-right: 20px;
+        min-width: 60px;
+        min-height: 60px;
+        transform: translate(0%, 100%);
+    }
+
+    .date {
+        width: 150px;
+    }
+}
+
+
+
+footer {
+    width: 100vw;
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+footer a {
+    color: rgb(193, 191, 255);
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+    font-weight: 700;
+}
